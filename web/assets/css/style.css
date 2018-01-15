@@ -1,0 +1,18 @@
+.fly{
+    background-image: url("http://www.freemagebank.com/wp-content/uploads/edd/2015/08/CR000007LR.jpg");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome{
+    color: white;
+}
+
+.categories{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+}

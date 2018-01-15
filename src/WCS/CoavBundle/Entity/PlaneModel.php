@@ -12,7 +12,15 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class PlaneModel
 {
-    /**
+	/**
+	 * @return string
+	 */
+	public function __toString()
+	{
+		return $this->model;
+	}
+
+	/**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
@@ -56,11 +64,13 @@ class PlaneModel
      */
     private $isAvailable;
 
+	// Generated Code
+
 
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -132,7 +142,7 @@ class PlaneModel
     /**
      * Get cruiseSpeed
      *
-     * @return int
+     * @return integer
      */
     public function getCruiseSpeed()
     {
@@ -156,7 +166,7 @@ class PlaneModel
     /**
      * Get planeNbSeats
      *
-     * @return int
+     * @return integer
      */
     public function getPlaneNbSeats()
     {
@@ -180,11 +190,10 @@ class PlaneModel
     /**
      * Get isAvailable
      *
-     * @return bool
+     * @return boolean
      */
     public function getIsAvailable()
     {
         return $this->isAvailable;
     }
 }
-

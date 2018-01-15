@@ -13,15 +13,17 @@ class ReservationType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nbReservedSeats')->add('publicationDate')->add('passenger')->add('flight')->add('wasDone');
+        $builder->add('nbReservedSeats')->add('publicationDate')->add('wasDone')->add('passengers')->add('flight');
     }/**
-     * {@inheritdoc}
-     */
+      * {@inheritdoc}
+      */
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(array(
+        $resolver->setDefaults(
+            array(
             'data_class' => 'WCS\CoavBundle\Entity\Reservation'
-        ));
+            )
+        );
     }
 
     /**

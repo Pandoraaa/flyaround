@@ -1,1 +1,58 @@
-Hello World!
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}">
+
+<body>
+<section class="fly">
+<h1 class="welcome text-center">Bienvenue sur Flyaround!</h1>
+    <div class="text-center"><img src="https://media.giphy.com/media/WKJpCXfvBHyla/giphy.gif" width="200px"></div>
+</section>
+<section class="categories">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="https://media.giphy.com/media/qDWQoqEbhYYy4/giphy.gif" width="100%">
+            </div>
+            <div class="caption">
+                <h3>Avions </h3>
+            <a href="{{ path('planemodel_index') }}" class="btn btn-primary">Voir les avions</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="https://media.giphy.com/media/WwiwGuCQvg16o/giphy.gif" width="100%">
+            </div>
+            <div class="caption">
+                <h3>Réservations </h3>
+            <a href="{{ path('reservation_index') }}" class="btn btn-primary">Voir les reservations</a>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="https://media.giphy.com/media/wxoPFRaoAGo2Q/giphy.gif" width="100%">
+            </div>
+            <div class="caption">
+                <h3>Vols </h3>
+            <a href="{{ path('flight_index') }}" class="btn btn-primary">Voir les vols</a>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="https://media.giphy.com/media/64NuD0dp5QvQs/giphy.gif" width="100%">
+            </div>
+            <div class="caption">
+                <h3>Terrains</h3>
+
+            <a href="{{ path('terrain_index') }}" class="btn btn-primary">Voir les terrains</a>
+        </div>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+</body>
+
